@@ -10,5 +10,8 @@
     <bean id="musicBean"
           class="ru.alishev.springcource.JazzMusic">
     </bean>
+    <bean id="musicPlayer" class="ru.alishev.springcource.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
 
 </beans>
